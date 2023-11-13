@@ -1,0 +1,95 @@
+.my-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.541);
+    margin-bottom: 40px;
+  }
+  
+  .my-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+  }
+  
+  .form-group {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  input,
+  textarea,
+  select, 
+  option {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .button-quote {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .button-quote button {
+    font-size: 18px;
+    transition: all 0.2s;
+    animation: bounce 1.5s infinite;
+  }
+    
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .success-message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #00a105;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeOut 3s;
+  }
+
+  .check-icon {
+    font-size: 2.5em;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
