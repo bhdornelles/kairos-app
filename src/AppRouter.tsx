@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./screens/Home";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export default function AppRouter() {
     return(
@@ -9,6 +10,7 @@ export default function AppRouter() {
             <Routes>
                 <Route path="/" element={<Home />}/>
             </Routes>
+            <Footer />
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css'
 
-import { AiOutlineArrowDown, AiOutlinePhone } from 'react-icons/ai'
+import { AiOutlinePhone } from 'react-icons/ai'
 
 const Navbar: React.FC = () => {
   const phoneNumber = '+16284440206';
@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     <div>
       <ul className="nav-items">
         <div className='dropdown'>
-          <button className='dropbtn'>Services<AiOutlineArrowDown /></button>
+          <button className='dropbtn'>Services</button>
             <div className='dropdown-content'>
               <a href='flooring'>Flooring</a>
               <a href='painting'>Painting</a>

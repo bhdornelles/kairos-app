@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import './styles.css'
 import FormQuote from '../../components/form-quote';
+import ReviewSlider from '../../components/reviews/Review';
+import AreaServed from '../../components/area-served';
 
 export default function Home() {
     const reviews = [
@@ -28,7 +30,7 @@ export default function Home() {
         <div className='homepage-container'>
             <div className='centered-content'>
                 <div className='text-image'>
-                    <h2>From small repairs to large renovations.</h2>
+                    <h2>From small to large renovations.</h2>
                     <h3>30% OFF ON FLOORING SERVICES <br/>UNTIL DECEMBER 25TH 2023</h3>
                 </div>
                 <div className='button-main-container'>
@@ -40,12 +42,12 @@ export default function Home() {
                     About Kairos Improvement LLC
                 </h1>
                 <h3>
-                    We are a reputable general contractor with over a decade of experience in residential and commercial renovations. We tackle projects from minor repairs to large-scale home remodeling. Fully licensed, insured, and committed to excellence, we deliver outstanding results with a skilled team. Transforming spaces is our passion.
+                    With over a decade of experience in residential and commercial renovations we tackle projects from minor repairs to large-scale home remodeling. Fully licensed, insured, and committed to excellence, we deliver outstanding results with a skilled team.
                 </h3>
                 <h2 className='licensed-insured'>100% Licensed & Insured</h2>
                 <h4>PA - MD - DE - NJ</h4>
             </div>
-            {/* <ReviewSlider reviews={reviews} /> */}
+            <ReviewSlider reviews={reviews} />
             <div className='title-services'>
                 <h1>Our Services</h1>
             </div>
@@ -88,6 +90,7 @@ export default function Home() {
                 </div>
             </div>
             <FormQuote />
+            <AreaServed />
         </div>
     )
 }

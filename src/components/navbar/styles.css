@@ -2,7 +2,6 @@ body {
     margin: 0;
   }
   
-  /* styles.css */
   .main-container {
       display: flex;
       justify-content: space-between;
@@ -38,7 +37,7 @@ body {
     }
     
     .nav-items li {
-      margin-right: 20px;
+      margin-right: 15px;
     }
     
     .nav-items a {
@@ -99,11 +98,12 @@ body {
     }
     
     .get-quote-nav {
-      margin-left: 5px;
+      margin-left: 2px;
     }
   
     .button-container {
-      margin-left: 10px;
+      margin-left: 2px;
+      margin-right: 5px;
       display: flex;
       align-items: center;
       justify-content: center;

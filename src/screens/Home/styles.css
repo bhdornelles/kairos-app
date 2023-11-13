@@ -20,7 +20,7 @@
   
   .text-image {
     background-color: rgba(0, 0, 0, 0.63);
-    padding: 15px;
+    padding: 8px;
     text-align: center;
     color: rgb(255, 251, 251);
     border-radius: 5px;
@@ -50,7 +50,7 @@
     color: white;
     padding: 10px 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 15px;
   }
@@ -79,24 +79,24 @@
   .weprovide-container {
       padding-top: 20px;
       text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
       font-size: 12px;
   }
   
   .weprovide-container h1 {
     font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .weprovide-container h3 {
-    margin: 5px
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .weprovide-container h4 {
     font-size: 16px;
     font-weight: 100;
-    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
   
   .licensed-insured {
     font-style: italic;
@@ -106,12 +106,13 @@
   
   h3 {
     font-weight: 400;
-    font-size: 17px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   h4 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
   }
   
   .title-services {
@@ -161,7 +162,8 @@
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.466);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
+    margin-bottom: 5px;
     transition: transform 0.2s ease;
   }
   
