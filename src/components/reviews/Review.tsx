@@ -21,7 +21,7 @@ const ReviewSlider: React.FC<ReviewSliderProps> = () => {
         infinite: true,
         speed: 900,
         autoplay: true,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
     };

@@ -13,7 +13,7 @@
     text-align: center;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 22px;
   }
   
   .form-group {
@@ -26,12 +26,12 @@
   select, 
   option {
     width: 95%;
-    padding: 10px;
-    margin: 8px 0;
+    padding: 12px;
+    margin: 12px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
   }
   
   button {
@@ -92,5 +92,11 @@
     }
     100% {
       opacity: 0.5;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .my-form {
+      max-width: 350px;
     }
   }

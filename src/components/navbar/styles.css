@@ -98,7 +98,8 @@ body {
     }
     
     .get-quote-nav {
-      margin-left: 2px;
+      margin-left: 10px;
+      text-align: center;
     }
   
     .button-container {
