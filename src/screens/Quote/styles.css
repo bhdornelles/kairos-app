@@ -1,0 +1,31 @@
+.page-container {
+    text-align: center;
+}
+
+.quote-block {
+    padding-top: 100px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.quote-block h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}
+
+.quote-block h2 {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.component-container {
+    padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .quote-block {
+        max-width: 950px;
+    }
+}

@@ -6,8 +6,13 @@ import { AiOutlineFacebook, AiOutlineInstagram } from 'react-icons/ai';
 import FormQuote from '../../components/form-quote';
 import ReviewSlider from '../../components/reviews/Review';
 import AreaServed from '../../components/area-served';
+import { useEffect } from 'react';
 
 export default function PressureWashing(){
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+    
     const sliderSettings = {
         dots: true,
         slidesToShow: 1,

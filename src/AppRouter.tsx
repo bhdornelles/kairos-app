@@ -6,6 +6,7 @@ import Flooring from "./screens/Flooring";
 import Gutter from "./screens/Gutter";
 import Painting from "./screens/Painting";
 import PressureWashing from "./screens/Pressure Washing";
+import QuotePage from "./screens/Quote";
 
 export default function AppRouter() {
     return(
@@ -17,6 +18,7 @@ export default function AppRouter() {
                 <Route path="/gutter" element={<Gutter />}/>
                 <Route path="/painting" element={<Painting />}/>
                 <Route path="/pressurewashing" element={<PressureWashing />}/>
+                <Route path="/quote" element={<QuotePage />}/>
             </Routes>
             <Footer />
         </div>

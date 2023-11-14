@@ -25,13 +25,14 @@
   textarea,
   select, 
   option {
-    width: 95%;
+    width: 100%;
     padding: 12px;
     margin: 12px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    box-sizing: border-box;
   }
   
   button {

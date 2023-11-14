@@ -6,8 +6,13 @@ import { AiOutlineFacebook, AiOutlineInstagram } from 'react-icons/ai';
 import FormQuote from '../../components/form-quote';
 import ReviewSlider from '../../components/reviews/Review';
 import AreaServed from '../../components/area-served';
+import { useEffect } from 'react';
 
 export default function Flooring(){
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     const sliderSettings = {
         dots: true,
         slidesToShow: 1,
@@ -38,7 +43,7 @@ export default function Flooring(){
         <div className='page-container'>
             <div className="first-block-floor">
                 <button onClick={scrollToQuoteForm}>GET 30% OFF</button>
-                <h3>VALID UNTIL DECEMBER 25TH 2023</h3>
+                <h3>VALID UNTIL DECEMBER 24TH 2023</h3>
             </div>
             <div className='second-block'>
                 <h1>FLOORING</h1>
