@@ -24,7 +24,7 @@ export default function FormQuote () {
         e.preventDefault();
     
         try {
-          const response = await fetch('http://localhost:5000/send-email', {
+          const response = await fetch('https://us-central1-kairoswebsite-21c64.cloudfunctions.net/sendMail', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ export default function FormQuote () {
                 <div className='success-message'>
                     <p>Great! <br/>We will get back to you soon!</p>
                     <AiFillCheckCircle className='check-icon'/><br/><br/>
-                    <button onClick={() => setIsSuccess(false)}>Request another quote?</button>
+                    <button onClick={() => setIsSuccess(false)}>REQUEST ANOTHER QUOTE?</button>
                 </div>
             ) : (
             <form onSubmit={handleSubmit}>
