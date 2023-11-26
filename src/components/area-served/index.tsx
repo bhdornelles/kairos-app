@@ -5,7 +5,7 @@ import ScrollReveal from 'scrollreveal';
 export default function AreaServed () {
     useEffect(() => {
         ScrollReveal().reveal('.area-container', {
-            delay: 150,
+            delay: 60,
             distance: '20px',
             easing: 'cubic-bezier(0.5, 0, 0, 1)',
             origin: 'bottom',

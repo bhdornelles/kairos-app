@@ -173,6 +173,10 @@
     max-width: 500px;
   }
 
+  .img-services img {
+    cursor: pointer;
+  }
+
   .services-block img {
     max-width: 100%;
     width: 450px;
@@ -186,6 +190,13 @@
   
   .services-block img:hover {
     transform: scale(1.05);
+  }
+
+  .off-selected-services h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 40px;
+    text-align: center;
+    letter-spacing: 1.5px;
   }
   
   /* Media query for smaller screens */

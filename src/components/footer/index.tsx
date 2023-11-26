@@ -11,11 +11,21 @@ export default function Footer() {
         window.location.href = 'https://www.facebook.com/profile.php?id=100083482665518&mibextid=LQQJ4d'
     }
 
+    const phoneNumber = '+16284440206';
+    const handleCallClick = () => {
+        window.location.href = `tel:${phoneNumber}`;
+     }
+
+     const handleMailClick = () => {
+        const email = 'kairosimprovement@gmail.com';
+        window.location.href = `mailto:${email}`;
+     }
+
     return (
         <div className='footer-container'>
             <div className='logo-company'>
                 <img src='/assets/logo-kairos.png' alt='logo-footer'/>
-                <h3>PA - NJ - DE - MD</h3>
+                <h3>PA — NJ — DE — MD</h3>
             </div>
             <div className='contact-container'>
                 <h2>Office Location</h2>
@@ -23,11 +33,11 @@ export default function Footer() {
             </div>
             <div className='phone-email'>
                 <h2>Contact Info</h2>
-                <div className='phone'>
+                <div onClick={handleCallClick} className='phone'>
                     <AiOutlinePhone />
                     <h3>628-444-0206</h3>
                 </div>
-                <div className='email'>
+                <div onClick={handleMailClick} className='email'>
                     <AiOutlineMail />
                     <h3>kairosimprovement@gmail.com</h3>
                 </div>

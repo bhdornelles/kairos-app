@@ -12,7 +12,7 @@ import ScrollReveal from 'scrollreveal';
 export default function Flooring(){
     useEffect(() => {
         ScrollReveal().reveal('.slider-block', {
-            delay: 150,
+            delay: 60,
             distance: '20px',
             easing: 'cubic-bezier(0.5, 0, 0, 1)',
             origin: 'bottom',
@@ -61,7 +61,7 @@ export default function Flooring(){
             <div className='second-block'>
                 <h1>FLOORING</h1>
                 <h2>Transform your space with our premier flooring service — expert installation, seamless repair, and a wide range of options including laminate, hardwood, carpet, vinyl, and tile. Elevate your home today!</h2>
-                <h3>30% OFF ON FLOORING SERVICES*</h3>
+                <h3>30% OFF ON FLOORING SERVICES</h3>
             </div>
             <div className='slider-container'>
             <Slider className='slider-block' {...sliderSettings}>

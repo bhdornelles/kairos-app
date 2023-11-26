@@ -3,16 +3,16 @@ import './styles.css'
 import FormQuote from '../../components/form-quote';
 import ReviewSlider from '../../components/reviews/Review';
 import AreaServed from '../../components/area-served';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
 
 export default function Home() {
     const navigate = useNavigate();
+    const formQuoteRef = useRef<HTMLDivElement | null>(null);
 
     const scrollToQuoteForm = () => {
-        const quoteForm = document.getElementById('quote-form-below');
-        if (quoteForm) {
-            quoteForm.scrollIntoView({ behavior: 'smooth' })
+        if (formQuoteRef.current) {
+            formQuoteRef.current.scrollIntoView({ behavior: 'smooth' })
         }
     }
 
@@ -45,7 +45,7 @@ export default function Home() {
 
     useEffect(() => {
         ScrollReveal().reveal('.img-services', {
-            delay: 150,
+            delay: 60,
             distance: '20px',
             easing: 'cubic-bezier(0.5, 0, 0, 1)',
             origin: 'bottom',
@@ -74,7 +74,7 @@ export default function Home() {
                     With over a decade of experience in residential and commercial renovations we tackle projects from minor repairs to large-scale home remodeling. Fully licensed, insured, and committed to excellence, we deliver outstanding results with a skilled team.
                 </h3>
                 <h2 className='licensed-insured'>100% Licensed & Insured</h2>
-                <h4>PA - MD - DE - NJ</h4>
+                <h4>PA — MD — DE — NJ</h4>
             </div>
             <ReviewSlider reviews={[]} />
             <div className='title-services'>
@@ -82,9 +82,8 @@ export default function Home() {
             </div>
             <div className='services-block'>
                 {services.map((service, index) => (
-                    // key={index} ref={serviceBlockRefs[index]}
                 <div key={index} className='img-services'>
-                    <img src={service.imgSrc} alt={`${service.title} img`} />
+                    <img onClick={() => navigate(service.route)} src={service.imgSrc} alt={`${service.title} img`} />
                     <div className='text-services'>
                     <h2>{service.title}</h2>
                     <h3>{service.description}</h3>
@@ -93,6 +92,9 @@ export default function Home() {
                     </div>
                 </div>
                 ))}
+            </div>
+            <div className='off-selected-services' ref={formQuoteRef}>
+                <h3>30% OFF ON SELECTED SERVICES</h3>
             </div>
             <FormQuote />
             <AreaServed />

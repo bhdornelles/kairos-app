@@ -19,7 +19,6 @@ export default function FormQuote () {
         setFormData({...formData, [name]: value})
     }
 
-    // Still getting this solved
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
     
@@ -35,16 +34,16 @@ export default function FormQuote () {
           if (response.ok) {
             setIsSuccess(true);
           } else {
-            alert('Error sending email2');
+            alert('Something went wrong. Please try again.');
           }
         } catch (error) {
           console.error(error);
-          alert('Error sending email');
+          alert('Something went wrong. Please try again later.');
         }
       };
 
     return(
-        <div className='my-form'>
+        <div className='my-form' id='quote-form'>
             <h1>Get a quote now. It's easy.</h1>
             {isSuccess ? (
                 <div className='success-message'>

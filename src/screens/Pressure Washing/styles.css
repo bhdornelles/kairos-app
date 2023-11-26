@@ -107,6 +107,10 @@
     .gallery-container {
         display: flex;
     }
+    .first-block {
+        height: 600px;
+        background-position: center;
+    }
 }
 
 @media (min-width: 1100px) {

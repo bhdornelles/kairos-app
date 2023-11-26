@@ -109,4 +109,7 @@
     .gallery-container {
         display: flex;
     }
+    .first-block-floor {
+        height: 600px;
+    }
 }

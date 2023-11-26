@@ -53,6 +53,7 @@
 .phone, .email {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .phone h3, .email h3 { 

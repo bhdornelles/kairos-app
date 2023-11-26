@@ -104,4 +104,8 @@
     .gallery-container {
         display: flex;
     }
+    .first-block-gutter {
+        height: 600px;
+        background-position: center;
+    }
 }

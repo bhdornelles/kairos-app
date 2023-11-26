@@ -14,14 +14,23 @@
     letter-spacing: 1.5px;
 }
 
-.quote-block h2 {
+.quote-block h2, h3 {
     font-size: 16px;
     font-weight: 100;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.quote-block h3 {
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
 .component-container {
-    padding-top: 10px;
+    padding-top: 2px;
+}
+
+.review-area-block {
+    margin-top: 50px;
 }
 
 @media (min-width: 768px) {
