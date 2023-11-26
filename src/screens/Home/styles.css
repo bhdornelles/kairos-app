@@ -172,7 +172,7 @@
     max-width: 100%;
     max-width: 500px;
   }
-  
+
   .services-block img {
     max-width: 100%;
     width: 450px;
@@ -210,5 +210,8 @@
       padding-left: 10%;
       padding-right: 10%;
       align-items: center;
+    }
+    .img-services {
+      margin-inline: 10%;
     }
   }

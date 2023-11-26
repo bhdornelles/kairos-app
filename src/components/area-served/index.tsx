@@ -1,6 +1,20 @@
-import './styles.css'
+import './styles.css';
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 export default function AreaServed () {
+    useEffect(() => {
+        ScrollReveal().reveal('.area-container', {
+            delay: 150,
+            distance: '20px',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            origin: 'bottom',
+            reset: false,
+            scale: 1,
+            viewFactor: 0.5,
+        })
+      }, [])
+
     return(
         <div className="area-container">
             <div className='title-area'>

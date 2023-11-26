@@ -7,8 +7,21 @@ import FormQuote from '../../components/form-quote';
 import ReviewSlider from '../../components/reviews/Review';
 import AreaServed from '../../components/area-served';
 import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 export default function Flooring(){
+    useEffect(() => {
+        ScrollReveal().reveal('.slider-block', {
+            delay: 150,
+            distance: '20px',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            origin: 'bottom',
+            reset: false,
+            scale: 1,
+            viewFactor: 0.5,
+        })
+      }, [])
+      
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
@@ -51,7 +64,7 @@ export default function Flooring(){
                 <h3>30% OFF ON FLOORING SERVICES*</h3>
             </div>
             <div className='slider-container'>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/03after.png' alt='floor-gallery01'/>
                 </div>
@@ -65,7 +78,7 @@ export default function Flooring(){
                     <img src='/assets/01before.png' alt='floor-gallery09'/>
                 </div>
             </Slider>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/05after.png' alt='floor-gallery03'/>
                 </div>
@@ -73,7 +86,7 @@ export default function Flooring(){
                     <img src='/assets/05before.png' alt='floor-gallery04'/>
                 </div>
             </Slider>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/02after.png' alt='floor-gallery05'/>
                 </div>

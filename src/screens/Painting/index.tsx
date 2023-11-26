@@ -7,8 +7,21 @@ import FormQuote from '../../components/form-quote';
 import ReviewSlider from '../../components/reviews/Review';
 import AreaServed from '../../components/area-served';
 import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 export default function Painting(){
+    useEffect(() => {
+        ScrollReveal().reveal('.slider-block', {
+            delay: 150,
+            distance: '20px',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            origin: 'bottom',
+            reset: false,
+            scale: 1,
+            viewFactor: 0.5,
+        })
+      }, [])
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
@@ -50,7 +63,7 @@ export default function Painting(){
                 <h3>Satisfaction is guarranted.</h3>
             </div>
             <div className='slider-container'>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/after.png' alt='painting-img01'/>
                 </div>
@@ -67,7 +80,7 @@ export default function Painting(){
                     <img src='/assets/after (5).png' alt='painting-img05'/>
                 </div>
             </Slider>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/after (17).png' alt='painting-img10'/>
                 </div>
@@ -81,7 +94,7 @@ export default function Painting(){
                     <img src='/assets/after (12).png' alt='painting-img07'/>
                 </div>
             </Slider>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/after (6).png' alt='painting-img08'/>
                 </div>

@@ -7,8 +7,21 @@ import FormQuote from '../../components/form-quote';
 import ReviewSlider from '../../components/reviews/Review';
 import AreaServed from '../../components/area-served';
 import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 export default function PressureWashing(){
+    useEffect(() => {
+        ScrollReveal().reveal('.slider-block', {
+            delay: 150,
+            distance: '20px',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            origin: 'bottom',
+            reset: false,
+            scale: 1,
+            viewFactor: 0.5,
+        })
+      }, [])
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
@@ -50,7 +63,7 @@ export default function PressureWashing(){
                 <h3>Make it new. Again.</h3>
             </div>
             <div className='slider-container'>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/pw05after.png' alt='pressure-img01'/>
                 </div>
@@ -70,7 +83,7 @@ export default function PressureWashing(){
                     <img src='/assets/pw06before.png' alt='pressure-img06'/>
                 </div>
             </Slider>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/before (1).png' alt='pressure-img07'/>
                 </div>
@@ -96,7 +109,7 @@ export default function PressureWashing(){
                     <img src='/assets/pw03before.png' alt='pressure-img14'/>
                 </div>
             </Slider>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/pw10after.png' alt='pressure-img15'/>
                 </div>

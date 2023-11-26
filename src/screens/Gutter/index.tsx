@@ -7,8 +7,21 @@ import FormQuote from '../../components/form-quote';
 import ReviewSlider from '../../components/reviews/Review';
 import AreaServed from '../../components/area-served';
 import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 export default function Gutter(){
+    useEffect(() => {
+        ScrollReveal().reveal('.slider-block', {
+            delay: 150,
+            distance: '20px',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            origin: 'bottom',
+            reset: false,
+            scale: 1,
+            viewFactor: 0.5,
+        })
+      }, [])
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
@@ -50,7 +63,7 @@ export default function Gutter(){
                 <h3>#GutterGuard #HomeProtection</h3>
             </div>
             <div className='slider-container'>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/gg2after1.png' alt='gutter-img01'/>
                 </div>
@@ -64,7 +77,7 @@ export default function Gutter(){
                     <img src='/assets/gg2before2.png' alt='gutter-img04'/>
                 </div>
             </Slider>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/after (20).png' alt='gutter-img05'/>
                 </div>
@@ -81,7 +94,7 @@ export default function Gutter(){
                     <img src='/assets/gg1before1a.png' alt='gutter-img09'/>
                 </div>
             </Slider>
-            <Slider {...sliderSettings}>
+            <Slider className='slider-block' {...sliderSettings}>
                 <div className='gallery-container'>
                     <img src='/assets/after (24).png' alt='gutter-img10'/>
                 </div>
