@@ -11,7 +11,7 @@ export default function Footer() {
         window.location.href = 'https://www.facebook.com/profile.php?id=100083482665518&mibextid=LQQJ4d'
     }
 
-    const phoneNumber = '+16284440206';
+    const phoneNumber = '+19804940420';
     const handleCallClick = () => {
         window.location.href = `tel:${phoneNumber}`;
      }
@@ -35,7 +35,7 @@ export default function Footer() {
                 <h2>Contact Info</h2>
                 <div onClick={handleCallClick} className='phone'>
                     <AiOutlinePhone />
-                    <h3>628-444-0206</h3>
+                    <h3>980-494-0420</h3>
                 </div>
                 <div onClick={handleMailClick} className='email'>
                     <AiOutlineMail />

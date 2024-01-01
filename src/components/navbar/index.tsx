@@ -4,7 +4,7 @@ import './styles.css'
 import { AiOutlinePhone } from 'react-icons/ai'
 
 const Navbar: React.FC = () => {
-  const phoneNumber = '+16284440206';
+  const phoneNumber = '+19804940420';
   const handleCallClick = () => {
     window.location.href = `tel:${phoneNumber}`;
   }
