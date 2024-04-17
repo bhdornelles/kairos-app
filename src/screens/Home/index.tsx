@@ -58,10 +58,6 @@ export default function Home() {
     return (
         <div className='homepage-container'>
             <div className='centered-content'>
-                <div className='text-image'>
-                    <h2>From small to large renovations.</h2>
-                    <h3>30% OFF ON FLOORING SERVICES <br/>UNTIL DECEMBER 24TH 2023</h3>
-                </div>
                 <div className='button-main-container'>
                     <button className="btn-get-quote" onClick={scrollToQuoteForm}>GET A QUOTE NOW</button>
                 </div>
