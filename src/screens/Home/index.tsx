@@ -58,6 +58,9 @@ export default function Home() {
     return (
         <div className='homepage-container'>
             <div className='centered-content'>
+                <div className='text-image'>
+
+                </div>
                 <div className='button-main-container'>
                     <button className="btn-get-quote" onClick={scrollToQuoteForm}>GET A QUOTE NOW</button>
                 </div>
