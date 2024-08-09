@@ -93,7 +93,6 @@ export default function Home() {
                 ))}
             </div>
             <div className='off-selected-services' ref={formQuoteRef}>
-                <h3>30% OFF ON SELECTED SERVICES</h3>
             </div>
             <FormQuote />
             <AreaServed />
