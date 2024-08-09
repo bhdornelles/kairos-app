@@ -55,7 +55,7 @@ export default function PressureWashing(){
     return(
         <div className='page-container'>
             <div className="first-block">
-                <button onClick={scrollToQuoteForm}>GET A QUOTE</button>
+                <button onClick={scrollToQuoteForm}>GET A FREE QUOTE</button>
             </div>
             <div className='second-block'>
                 <h1>PRESSURE WASHING</h1>

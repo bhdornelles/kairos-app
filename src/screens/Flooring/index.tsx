@@ -55,13 +55,11 @@ export default function Flooring(){
     return(
         <div className='page-container'>
             <div className="first-block-floor">
-                <button onClick={scrollToQuoteForm}>GET 30% OFF</button>
-                <h3>VALID UNTIL DECEMBER 24TH 2023</h3>
+                <button onClick={scrollToQuoteForm}>GET A FREE QUOTE</button>
             </div>
             <div className='second-block'>
                 <h1>FLOORING</h1>
                 <h2>Transform your space with our premier flooring service — expert installation, seamless repair, and a wide range of options including laminate, hardwood, carpet, vinyl, and tile. Elevate your home today!</h2>
-                <h3>30% OFF ON FLOORING SERVICES</h3>
             </div>
             <div className='slider-container'>
             <Slider className='slider-block' {...sliderSettings}>
@@ -104,7 +102,6 @@ export default function Flooring(){
                     <AiOutlineInstagram style={{ fontSize: '35px' }} onClick={handleInstagramClick}/>
                     <AiOutlineFacebook style={{ fontSize: '35px' }} onClick={handleFacebookClick} />
                 </div>
-                <button>ENJOY 30% OFF ON FLOORING SERVICES</button>
             </div>
             <div className='components-container'>
                 <FormQuote />

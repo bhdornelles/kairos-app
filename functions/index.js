@@ -16,6 +16,14 @@ const transporter = nodemailer.createTransport({
 
 exports.sendMail = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
+    res.set("Access-Control-Allow-Origin", "*");
+    res.set("Access-Control-Allow-Methods", "GET, POST");
+    res.set("Access-Control-Allow-Headers", "Content-Type");
+
+    if (req.method === "OPTIONS") {
+      return res.status(204).send("");
+    }
+
     const formData = req.body;
 
     const mailOptions = {
@@ -36,8 +44,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
         return res.status(500).json({message: "Error sending email"});
       }
 
-      res.set("Access-Control-Allow-Origin", "*");
-      return res.status(200).json({message: "Email sent sucessfully"});
+      return res.status(200).json({message: "Email sent successfully"});
     });
   });
 });
